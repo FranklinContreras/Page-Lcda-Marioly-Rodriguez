@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Franklin Darío Contreras Rodríguez">
+    <meta name="description" content="Formulario de contacto para atender al usuario">
+    <meta name="keywords" content="Contacto de administradora,necesito administradora,busco administradora,ayuda en mi organizacion">
+    <link rel="stylesheet" href="style/Style.css">
+    <link rel="shorcut icon" type="imagen/x-icon" href="Img/FaviconRM.ico"/>
+    <title>RM/Contacto</title>
+</head>
+<body>
+    <header class="Header">
+        <input type="checkbox" id="Figure">
+        <label for="Figure"><img src="Img/draggable-dots.png" alt="IconLogo"></label>
+        <div><img src="Img/LogoRM.png" alt="LogoRm" id="LogoRM" ></div>
+        <nav class="NavPage">
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Service.html">Servicios</a></li>
+                <li><a href="Contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <div class="ContainerContact">
+                <div><img src="Img/Email campaign-rafiki.png" alt="Imagen de contacto" id="ImgContact"></div>
+                <div class="ContainerForm">
+                    <form enctype="text/plain" action="Mailto:contreras19.franklin@gmail.com" method="POST" id=FormContact>
+                        <fieldset class="FormGroup"> 
+                            <legend id="LegendContact">Contacto</legend>
+                            <label for="TitleContact">¿En que te podemos ayudarte ?</label>
+                            <textarea name="Help" id="TitleContact" cols="35" rows="8" placeholder="¿En que te podemos ayudar?"></textarea>
+                            <div class="ContainerButton"><input type="submit" value="Enviar" id="Button"></div>
+                         </fieldset>       
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <div><p>©2021 Todos los derechos reservados.<br> Designed by Franklin Contreras.<br><a href="https://storyset.com/people">Illustration by Freepik Storyset.</a></p></div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,360 @@
+
+body{                                                                                 /*ASIGNACIONES GLOBALES*/
+    box-sizing: border-box;
+    background: linear-gradient(to right,white,rgba(64,123,255,.9)); 
+    margin: 0.5rem ;
+    font-size: 16px ;
+    padding: 0px;
+}
+footer{
+    font-family:'Monotype Corsiva';
+    text-align: center;
+    background-color:rgba(64,123,255,.2);
+    border: 0.1rem solid black;
+    padding: .1rem 0;
+    margin: .6rem 3rem;
+}
+footer  div p a{
+    color: black;
+    text-decoration: none;
+}
+#ImgPage{
+    width: 90%;
+    margin: 0;
+}
+#Figure{
+    display: none;
+}
+#LogoRM{
+    width:8rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.Header > label{
+    display: none;
+}
+.Header{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.NavPage{
+    position: fixed;
+    right: 0;
+}
+.NavPage > ul{
+    width: 25rem;
+    display: flex;
+    margin: 0;
+    padding: 0 1rem;
+    list-style: none;
+}
+.NavPage > ul li{
+    width: 100%;
+    display: block;
+    padding: 1rem 0;
+    margin:0 0.2rem;
+    background-color: rgba(64,123,255,.4);
+    box-shadow: 0.2rem 0.2rem rgba(255,255,255,.7);
+    border: 0.1rem solid black;
+    text-align: center;
+}
+.NavPage > ul li a{
+    text-decoration: none;
+    color: black;
+    font-family:'Monotype Corsiva';
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+.NavPage > ul li:hover{
+    transition: .5s;
+    color: black;
+    background-color:rgba(255,255,255,1);
+    cursor: pointer;
+    width: 27rem;
+}
+.ContainersMain{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.ContainerIndex{
+    display: grid;
+    justify-content: right;
+}
+#TitleIndex{
+    text-align: center;
+    font-size: 4rem;
+    font-family:'Monotype Corsiva';
+    margin: auto;
+    text-shadow: 0.3rem 0.2rem 0.1rem rgba(64,123,255,.9);
+}
+.ContainerIndex p {
+    text-align: center;
+    font-size: 1.1rem;
+    font-family:'Monotype Corsiva';
+}
+#TitleService{                                                                         /*PAGINA DE SERVICIOS*/
+    text-align: center;
+    font-size: 4rem;
+    font-family:'Monotype Corsiva';
+    margin: auto;
+    text-shadow: 0.3rem 0.2rem 0.1rem rgba(64,123,255,.9);
+}
+#ImgService{
+    width: 50%;
+    margin: 3rem 0;
+}    
+.Service{
+    display: flex;
+    justify-content: center;
+}    
+.ContainerList{
+    background-color:rgba(64,123,255,.2); 
+    border: .1rem solid black;
+    display: grid;
+    font-size: 1.8rem;
+    font-family:'Monotype Corsiva';
+    grid-template-columns: 50% 50%;
+    padding: 2rem .5rem;
+    margin: 3rem 3rem;
+}    
+.ListService > li{
+    margin-top: 2rem;
+}    
+.ContainerList > div{
+    display: flex;
+    justify-content: center;
+}    
+.ContainerContact{                                                                     /* PAGINA DE CONTACTO*/
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#ImgContact{
+    width: 90%;
+}
+.ContainerForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#LegendContact{
+    margin: auto;
+    font-size: 3.5rem;
+    font-family:'Monotype Corsiva';
+}
+#FormContact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FormGroup{
+    width: 65%;
+    display: grid;
+    justify-content: center;
+    border: .1rem solid black;
+    padding: .5rem .1rem;
+    text-align: center;
+    font-family:'Monotype Corsiva';
+    background-color:rgba(64,123,255,.2);
+    text-shadow: 0.3rem 0.2rem 0.1rem rgba(64,123,255,.9);
+    font-size: 1.2rem;
+}
+#TitleContact{
+    margin: .8rem .2rem;
+    background-color:rgba(64,123,255,.4);
+    border: .1rem solid black;
+    resize: vertical;
+    max-height: 20rem;
+    min-height: 8rem; 
+    color: white;
+}
+.ContainerButton{
+    display: flex;
+    margin: 1rem 0;
+    justify-content: center;
+    align-items: center;
+}
+#Button{
+    width: 10rem;
+    padding: .6rem;
+    border: 0.1rem solid black;
+    background-color:rgba(64,123,255,.9);
+    box-shadow: 0.2rem 0.2rem rgba(255,255,255,.7);
+    font-family:'Monotype Corsiva';
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#Button:hover {
+    box-shadow: 0.3rem 0.3rem rgba(255,255,255,.7);
+    background-color:rgba(255,255,255,1);
+    transition: .3s;
+    width: 10.1rem;
+}
+@media(max-width:720px){                                                                    /*MEDIA QUERY*/
+    body{
+        font-size:12px;
+        background: linear-gradient(to left,white,rgba(64,123,255,.9));
+    }
+    .Header label{
+        display: block;
+        position:fixed;
+        top: 2rem;
+        left: 0;
+    }
+    #LogoRM{
+        left: 3rem;
+        position: fixed ;
+        top: 1rem;
+    }
+    .NavPage{
+        position: fixed;
+        top: 6rem;
+        left: -90rem;
+        text-align: center;
+    }
+    .NavPage > ul{
+        flex-direction: column;
+        padding: 0;
+    }
+    .NavPage > ul li{
+        background-color: rgba(64,123,255,1);
+        margin: 0.1rem 0;
+        width: 16rem;
+    }
+    .NavPage > ul li:hover{
+        width: 17rem;
+    }
+    .NavPage > ul li a{
+        padding: 1rem 6.5rem;
+    }
+    #Figure:checked ~ .NavPage{
+        left: 0;
+        transition: 0.5s;
+    }
+    .Header{
+        width: 95%;
+    }
+    .ContainersMain{
+        display: grid;
+        justify-items: center;
+        height: 30rem;
+        width: 95%;
+    }
+    #TitleIndex{
+        font-size: 2.5rem;
+        width: 100%; 
+        color: black;  
+        text-shadow: 0.3rem 0.2rem 0.1rem rgba(64,123,255,.9);
+    }
+    .ContainerIndex p{
+        color:black;
+        text-shadow: 0.3rem 0.2rem 0.1rem rgba(64,123,255,.9);
+        margin: 0;
+        font-size: 0.8rem;
+    }
+    #ImgPage{
+       width: 100%;
+       height: 100%; 
+    }
+    #TitleService{
+        font-size:3rem;
+    }
+    #ImgService{
+        width: 70%;
+    }
+    .ContainerList{
+        grid-template-columns: 1fr;
+        padding: 2rem .5rem;
+        margin: 3rem 2rem;
+        font-size:1.5rem;
+    } 
+    .ContainerList > div{
+        justify-content:left;
+    }
+    #ImgContact{
+        width: 100%;
+        height: 100%;
+    }
+    #LegendContact{
+        font-size: 2rem;
+    }
+    .FormGroup{
+        width: 70%;
+        padding: .8rem .5rem;
+        font-size: 1rem;
+    }
+    #TitleContact{
+        margin: .4rem .3rem;
+        width: 13rem;
+        font-size: .9rem;
+    }
+    #Button{
+        width: 9rem;
+        padding: .3rem;
+        font-size: 1rem;
+    }
+    #Button:hover {
+        width: 9.2rem;
+    }
+}
+@media(max-width:480px){
+    .NavPage > ul li a {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+    .NavPage > ul li{
+        width:8rem;
+    }
+    .NavPage > ul li:hover {
+        width: 8.4rem;
+    }
+    #ImgPage{
+        display: none;
+    } 
+    .ContainersMain{
+        grid-template-columns: none;
+        justify-content: center;
+        height: 17rem;
+        margin-bottom: 5rem;
+    }
+    #TitleIndex{
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-image:url(../Img/Analytics-amico.png) ;
+        font-size: 2.3rem;
+        padding: 30% 0 15% 0;
+    }
+    #TitleService{
+        font-size: 2.3rem;
+    }
+    .ContainerList{
+        font-size: 1rem;
+    }
+    #LegendContact{
+        font-size: 1.5rem;
+    }
+    .FormGroup{
+        width: 70%;
+        padding: .5rem .5rem;
+        font-size: .8rem;
+    }
+    #TitleContact{
+        margin: auto;
+        margin-top: .5rem;
+        width: 7rem;
+    }
+    #Button{
+        width: 7rem;
+        padding: .3rem;
+        font-size: .8rem;
+    }
+    #Button:hover {
+        width: 7.2rem;
+    }
+}
